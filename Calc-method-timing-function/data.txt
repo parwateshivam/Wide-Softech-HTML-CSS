@@ -1,0 +1,44 @@
+1. ✅ calc() method in CSS
+The calc() function is used to perform calculations directly in CSS property values. It’s helpful when you need to combine different units (like %, px, em, etc.) or do simple math.
+
+syntax ->
+
+width: calc(100% - 50px);
+
+Example ->
+
+.container {
+  width: calc(100% - 40px);
+  height: calc(50vh + 100px);
+  margin-left: calc(10px + 2%);
+}
+
+Repeat timing function in CSS (Animation/Transition)
+There's no property called "repeat timing function", but you might be referring to animation timing and repeating animations.
+
+🔹 animation-iteration-count — controls how many times the animation repeats.
+
+animation-iteration-count: infinite; /* repeats forever */
+animation-iteration-count: 3; /* repeats 3 times */
+
+* animation-timing-function — controls the speed curve of the animation.
+
+animation-timing-function: ease;      /* default */
+animation-timing-function: linear;    /* same speed throughout */
+animation-timing-function: ease-in;   /* slow at start */
+animation-timing-function: ease-out;  /* slow at end */
+animation-timing-function: ease-in-out;
+
+📌 Example:
+
+@keyframes slide {
+  from { transform: translateX(0); }
+  to { transform: translateX(100px); }
+}
+
+.box {
+  animation-name: slide;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}

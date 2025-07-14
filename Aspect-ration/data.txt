@@ -1,0 +1,53 @@
+### 📐 What is `aspect-ratio` in CSS?
+
+The `aspect-ratio` property in CSS is used to **control the width-to-height ratio** of an element — especially useful for responsive design and media like images, videos, or containers.
+
+---
+
+### ✅ Syntax:
+
+```css
+aspect-ratio: width / height;
+```
+
+### 🔢 Examples:
+
+```css
+.box {
+  aspect-ratio: 16 / 9;  /* widescreen shape */
+}
+
+.square {
+  aspect-ratio: 1 / 1;   /* perfect square */
+}
+
+.portrait {
+  aspect-ratio: 3 / 4;   /* taller than wide */
+}
+```
+
+---
+
+### 📌 Key Points:
+
+* It **reserves space** based on the ratio, even **before content loads** (like images).
+* Helps create **responsive layouts** without needing to calculate height manually.
+* Works best when **width or height is constrained** (e.g., with `width: 100%`).
+
+---
+
+### 💡 Example:
+
+```css
+.card {
+  width: 300px;
+  aspect-ratio: 4 / 3;
+  background: lightblue;
+}
+```
+
+This will create a box 300px wide and 225px high (300 × 3 ÷ 4 = 225).
+
+---
+
+Would you like a small project using `aspect-ratio` in HTML/CSS?
