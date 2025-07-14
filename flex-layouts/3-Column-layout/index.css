@@ -1,0 +1,28 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+}
+
+.wrapper {
+  display: flex;
+  height: 100vh;
+}
+
+.column {
+  flex: 1;
+  padding: 20px;
+  color: white;
+  text-align: center;
+}
+
+.left {
+  background: #0077b6;
+}
+
+.center {
+  background: #0096c7;
+}
+
+.right {
+  background: #00b4d8;
+}

@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>html-tables</title>
+  </head>
+  <body>
+    <h1>Student Data</h1>
+    <table border="1">
+      <tr>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>Age</th>
+      </tr>
+      <tr>
+        <td>Shivam</td>
+        <td>Parwate</td>
+        <td>22</td>
+      </tr>
+      <tr>
+        <td>Pranay</td>
+        <td>Katkar</td>
+        <td>21</td>
+      </tr>
+      <tr>
+        <td>Sagar</td>
+        <td>Samarth</td>
+        <td>18</td>
+      </tr>
+    </table>
+    <br />
+    <h1>Time Table</h1>
+    <table border="1">
+      <tr>
+        <th>Mon</th>
+        <th>Tue</th>
+        <th>Wed</th>
+        <th>Thu</th>
+        <th>Fri</th>
+        <th>Sat</th>
+        <th>Sun</th>
+      </tr>
+      <tr>
+        <td>Science</td>
+        <td>Maths</td>
+        <td>Hindi</td>
+        <td>Marathi</td>
+        <td>English</td>
+        <td rowspan="6" colspan="2">Holiday</td>
+      </tr>
+      <tr>
+        <td>English</td>
+        <td>Marathi</td>
+        <td>Science</td>
+        <td>Maths</td>
+        <td>Hindi</td>
+      </tr>
+      <tr>
+        <td colspan="5" align="center">Lunch Time</td>
+      </tr>
+      <tr>
+        <td>Maths</td>
+        <td>Hindi</td>
+        <td>English</td>
+        <td colspan="2" align="center">Science</td>
+      </tr>
+      <tr>
+        <td colspan="5" align="center">Short Break</td>
+      </tr>
+      <tr>
+        <td>Marathi</td>
+        <td>English</td>
+        <td>Maths</td>
+        <td>Science</td>
+        <td>Hindi</td>
+      </tr>
+    </table>
+    <br />
+    <h2>Invoice</h2>
+    <table border="1">
+      <tr>
+        <th>Item</th>
+        <th>Qty</th>
+        <th>Price</th>
+        <th>Total</th>
+      </tr>
+      <tr>
+        <td>Pen</td>
+        <td>10</td>
+        <td>$1</td>
+        <td>$10</td>
+      </tr>
+      <tr>
+        <td>Notebook</td>
+        <td>5</td>
+        <td>$2</td>
+        <td>$10</td>
+      </tr>
+      <tr>
+        <td colspan="3"><strong>Grand Total</strong></td>
+        <td><strong>$20</strong></td>
+      </tr>
+    </table>
+    <br />
+    <h2>Employee Shifts</h2>
+    <table border="1">
+      <tr>
+        <th rowspan="2">Employee</th>
+        <th colspan="2">Shift Time</th>
+        <th rowspan="2">Department</th>
+      </tr>
+      <tr>
+        <th>Start</th>
+        <th>End</th>
+      </tr>
+      <tr>
+        <td>John</td>
+        <td>9:00 AM</td>
+        <td>5:00 PM</td>
+        <td>HR</td>
+      </tr>
+      <tr>
+        <td>Emma</td>
+        <td>10:00 AM</td>
+        <td>6:00 PM</td>
+        <td>Sales</td>
+      </tr>
+    </table>
+    <br />
+    <!DOCTYPE html>
+    <html>
+      <head>
+        <title>Complex HTML Table</title>
+      </head>
+      <body>
+        <h2>University Exam Schedule</h2>
+        <table border="1">
+          <tr>
+            <th rowspan="3">Department</th>
+            <th rowspan="3">Course</th>
+            <th colspan="6">Exam Schedule</th>
+          </tr>
+          <tr>
+            <th colspan="2">Morning</th>
+            <th colspan="2">Afternoon</th>
+            <th colspan="2">Evening</th>
+          </tr>
+          <tr>
+            <th>Time</th>
+            <th>Room</th>
+            <th>Time</th>
+            <th>Room</th>
+            <th>Time</th>
+            <th>Room</th>
+          </tr>
+
+          <tr>
+            <td rowspan="2">Computer Science</td>
+            <td>Data Structures</td>
+            <td>9:00 AM</td>
+            <td>101</td>
+            <td>—</td>
+            <td>—</td>
+            <td>6:00 PM</td>
+            <td>105</td>
+          </tr>
+          <tr>
+            <td>Operating Systems</td>
+            <td>10:00 AM</td>
+            <td>102</td>
+            <td>2:00 PM</td>
+            <td>202</td>
+            <td>—</td>
+            <td>—</td>
+          </tr>
+
+          <tr>
+            <td rowspan="2">Mechanical</td>
+            <td>Thermodynamics</td>
+            <td>—</td>
+            <td>—</td>
+            <td>1:00 PM</td>
+            <td>303</td>
+            <td>5:00 PM</td>
+            <td>304</td>
+          </tr>
+          <tr>
+            <td>Fluid Mechanics</td>
+            <td>8:00 AM</td>
+            <td>305</td>
+            <td colspan="2">Lab Session</td>
+            <td>7:00 PM</td>
+            <td>306</td>
+          </tr>
+
+          <tr>
+            <td rowspan="2">Electrical</td>
+            <td>Circuits</td>
+            <td>9:00 AM</td>
+            <td>401</td>
+            <td>—</td>
+            <td>—</td>
+            <td>6:00 PM</td>
+            <td>405</td>
+          </tr>
+          <tr>
+            <td>Power Systems</td>
+            <td>10:30 AM</td>
+            <td>402</td>
+            <td>3:00 PM</td>
+            <td>403</td>
+            <td>—</td>
+            <td>—</td>
+          </tr>
+        </table>
+      </body>
+    </html>
+  </body>
+</html>

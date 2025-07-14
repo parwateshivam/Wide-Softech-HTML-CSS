@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    .container{
+      height: 300px;
+      width: 100vw;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      background-color: gray;
+      gap: 50px;
+    }
+    .box{
+      height: 100px;
+      width: 100px;
+      background-color: blueviolet;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    #b1{
+      outline: auto;
+    }
+    #b2{
+      outline-style: dotted;
+    }
+    #b3{
+      outline-style: dashed;
+      outline-color: brown;
+      outline-width:thick;
+    }
+    #b4{
+      outline-style: double;
+      outline-color: blue;
+    }
+    #b5{
+      outline: 1px solid black;
+      outline-offset: 15px;
+    }
+
+    .placeholder-container{
+      width:100vw;
+      height: 300px;
+      background-color: aqua;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 5px;
+    }
+
+    input::placeholder{
+      color: red;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div id="b1" class="box">outline : auto</div>
+    <div id="b2" class="box">outline-style : dotted/dashed</div>
+    <div id="b3" class="box">outline-width :thin/medium/thick</div>
+    <div id="b4" class="box">outline-color</div>
+    <div id="b5" class="box">outline-offset</div>
+  </div>
+  <div class="placeholder-container">
+    <input type="text" placeholder="enter your name">
+    <input type="text" placeholder="enter your e-mail">
+    <input type="submit">
+  </div>
+</body>
+</html>
