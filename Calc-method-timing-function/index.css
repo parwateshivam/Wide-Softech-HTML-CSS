@@ -1,0 +1,43 @@
+/* Container uses calc() for dynamic spacing */
+.container {
+  width: calc(100% - 60px);
+  height: 300px;
+  margin: 30px;
+  border: 2px solid #333;
+  position: relative;
+  background: linear-gradient(135deg, #f0f0f0, #c0c0ff);
+  overflow: hidden;
+}
+
+/* Box uses animation with repeat and timing function */
+.box {
+  width: 100px;
+  height: 100px;
+  background-color: #4caf50;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: calc(50% - 50px);
+  /* Vertically center using calc */
+  animation-name: move;
+  animation-duration: 3s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+
+/* Keyframes animation */
+@keyframes move {
+  0% {
+    left: 0;
+  }
+
+  50% {
+    left: calc(100% - 100px);
+  }
+
+  100% {
+    left: 0;
+  }
+}
