@@ -505,6 +505,7 @@ header {
 
   .hero-container {
     flex-direction: column;
+    gap: 1.5rem;
   }
 
   .right-part {
@@ -522,9 +523,13 @@ header {
     font-size: 2rem;
   }
 
-  .hero-container {
-    gap: 1.5rem;
+  .right-part img {
+    height: 45vh;
+    border-radius: 1rem;
+    display: flex;
+    justify-self: flex-end;
   }
+
 
   .newsletter-container {
     flex-direction: column;
