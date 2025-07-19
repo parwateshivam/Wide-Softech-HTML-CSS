@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../bootstrap-5.0.2-dist/css/bootstrap.css">
+  <title>Document</title>
+</head>
+
+<style>
+  .parent {
+    width: 300px;
+    height: 300px;
+  }
+
+  .child {
+    width: 100px;
+    height: 100px;
+    border-radius: 2rem;
+  }
+</style>
+
+<body>
+  <h1 class="bg-warning text-center text-danger p-3">Position property in bootstrap-css</h1>
+
+  <br>
+
+  <button class="bg-primary px-4 py-2 rounded position-relative text-white ms-5">Mails
+    <span class="position-absolute start-100 top-0 translate-middle bg-secondary rounded-pill px-2">+99</span>
+  </button>
+
+  <br>
+  <br>
+
+  <div class="parent bg-danger position-relative ms-5 mt-5">
+    <div class="child bg-warning position-absolute top-0 start-0 translate-middle"></div>
+    <div class="child bg-warning position-absolute top-0 start-100 translate-middle"></div>
+    <div class="child bg-warning position-absolute bottom-0 top-100 translate-middle"></div>
+    <div class="child bg-warning position-absolute top-100 start-100 translate-middle"></div>
+    <div class="child bg-warning position-absolute top-50 start-50 translate-middle"></div>
+  </div>
+</body>
+
+</html>
