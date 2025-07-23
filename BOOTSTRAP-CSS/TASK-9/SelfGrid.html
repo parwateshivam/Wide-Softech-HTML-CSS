@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../bootstrap-5.0.2-dist/css/bootstrap.css">
+  <title>Document</title>
+  <style>
+    body {
+      width: 100vw;
+      height: 100vh;
+    }
+
+    .row,
+    .col {
+      text-align: center;
+      color: white;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container p-5 border border-dark border-2 my-5" style="height: 500px; width: 100%;">
+    <div class="row h-100 gap-2">
+      <div class="row h-25">
+        <div class="col bg-danger rounded">Header</div>
+      </div>
+
+      <div class="row h-50 gap-2">
+        <div class="col col-4 bg-warning h-100 rounded">
+          Sidebar
+        </div>
+
+        <div class="col h-100">
+          <div class="row h-50">
+            <div class="col bg-info rounded">Content1</div>
+          </div>
+
+          <div class="row h-50 gap-2">
+            <div class="col bg-secondary rounded">Content2</div>
+            <div class="col bg-success rounded">Content3</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row h-25">
+        <div class="col bg-primary rounded">Footer</div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
