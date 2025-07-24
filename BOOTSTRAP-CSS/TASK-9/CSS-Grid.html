@@ -1,11 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <link rel="stylesheet" href="../bootstrap-5.0.2-dist/css/bootstrap.css">
 </head>
+<style>
+  .parent {
+    width: 90%;
+    height: 500px;
+    margin-inline: auto;
+    border: 1px solid black;
+  }
+</style>
+
 <body>
-  
+  <div class="parent">
+    <div class="w-100 grid">
+      <div class="box bg-danger g-col-12">Header</div>
+
+      <div class="grid w-100">
+        <div class="box bg-warning bg-col-4">Sidebar</div>
+        <div class="box">Content1</div>
+        <div class="box">Content2</div>
+      </div>
+
+      <div class="box">Contact-part</div>
+      <div class="box">Footer</div>
+    </div>
+  </div>
 </body>
+
 </html>
