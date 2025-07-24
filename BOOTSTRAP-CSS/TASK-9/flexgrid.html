@@ -12,7 +12,8 @@
     .parent {
       width: 100%;
     }
-    div{
+
+    div {
       color: white;
       border-radius: 5px;
     }
@@ -23,15 +24,15 @@
   <h1 class=" m-4 "> Display-flex</h1>
 
   <div class="container-fluid">
-    <div class="container border p-4 border-2 border-dark" style="height: 500px;">
+    <div class="container border p-4 border-2 border-dark" style="height: 400px;">
       <div class="parent d-flex h-100 gap-2">
         <div class="sidebar1 bg-primary flex-stretch">sidebar1</div>
 
-        <div class="center h-100 flex-grow-1">
+        <div class="center h-100 d-flex flex-column flex-grow-1 gap-2">
           <div class="header bg-success h-25">Header</div>
 
           <div class="d-flex h-75 gap-2">
-            <div class="d-flex flex-column">
+            <div class="d-flex flex-column gap-2" style="width: 200px;">
               <div class="bg-danger flex-grow-1">box1</div>
               <div class="bg-info flex-grow-1">box2</div>
             </div>
