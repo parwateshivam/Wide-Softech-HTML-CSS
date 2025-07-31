@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../bootstrap-5.0.2-dist/css/bootstrap.css">
+  <script src="../bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js"></script>
+  <title>Document</title>
+  <style>
+    .box{
+      height: 500px;
+    }
+  </style>
+</head>
+
+<body data-bs-spy="scroll" data-bs-target="#navbar">
+  <div class="container-fluid bg-dark position-sticky top-0">
+    <div class="container">
+      <nav id="navbar" class="navbar navbar-expand navbar-dark bg-dark">
+        <span class="navbar-brand fw-bolder fs-3">logo</span>
+        <ul class="navbar-nav nav-pills ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#blog">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+
+  <div class="container-fluid">
+    <div class="container">
+      <div class="box bg-danger" id="home">Home</div>
+      <div class="box bg-success" id="about">About</div>
+      <div class="box bg-info" id="blog">Blog</div>
+      <div class="box bg-warning" id="contact">Contact</div>
+    </div>
+  </div>
+</body>
+
+</html>
